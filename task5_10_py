@@ -1,0 +1,24 @@
+# Создать список поездов. Структура словаря: номер поезда,
+# пункт и время прибытия, пункт и время отбытия. Вывести все сведения о поездах,
+# время пребывания в пути которых превышает 7 часов 20 минут.[02-7.3-ML02]
+# Примечание: данное задание подразумевает самостоятельное изучение принципов работы со
+# временем в Python(библиотека datetime)
+
+import datetime
+
+trains_list = {8765: {'Tallinn': datetime.time(9, 10), 'Tartu': datetime.time(18, 20)},
+               6666: {'Rakvere': datetime.time(12, 30), 'Haapsalu': datetime.time(14, 00)},
+               5790: {'Pärnu': datetime.time(8, 30), 'Narva': datetime.time(22, 40)},
+               7171: {'Tallinn': datetime.time(1, 1), 'Moskva': datetime.time(23, 59)}}
+
+for key in trains_list:
+    train_props = trains_list[key]
+    times = []
+    for item in train_props:
+        time = train_props[item]
+        times.append(time)
+    arrival_time = datetime.datetime.combine(datetime.date.today(), times[0])
+    recieve_time = datetime.datetime.combine(datetime.date.today(), times[1])
+    time_delta = recieve_time - arrival_time
+    if time_delta.total_seconds() / 3600 > 7.20:
+        print(f"{key}: {train_props}")
