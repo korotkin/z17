@@ -69,3 +69,15 @@ for i in range(n):
 
 print(matrix_a)
 print(matrix_b)
+
+""" Task_06_12
+Создать матрицу равную сумме matrix_a и matrix_b."""
+
+matrix_c = []
+for i in range(n):
+    c_list = []
+    for j in range(m):
+        elem = matrix_a[i][j] + matrix_b[i][j]
+        c_list.append(elem)
+    matrix_c.append(c_list)
+print(matrix_c)
