@@ -1,3 +1,4 @@
+#  Task_06_09
 #  Обнулить все элементы матрицы выше главной диагонали.
 
 from random import randint
@@ -25,3 +26,19 @@ for row in arr:
     for elem in row:
         print(elem, end=" ")
     print()  # Печатаем для проверки
+
+#  Task_06_10
+#  Обнулить все элементы матрицы ниже главной диагонали.
+
+i = 1
+while i < n:
+    j = 0
+    while j < i:
+        arr[i][j] = 0
+        j += 1
+    i += 1
+
+for row in arr:
+    for elem in row:
+        print(elem, end=" ")
+    print()
