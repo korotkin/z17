@@ -41,3 +41,14 @@ converter(n, 'кг')
 converter(m, 'фунтов')
 
 
+#7:Унции в граммы и #8:Граммы в унции
+n = float(input("Введи массу в унциях:"))
+m = float(input("Введи массу в граммах:"))
+def converter(n, m):
+    ounce = 28.3495
+    if m == 'унций':
+        print("{} унций = {}грамм ".format(n, (round(n * ounce))))
+    if m == 'грамм':
+        print("{} грамм = {}унций ".format(n, (round(n / ounce, 2))))
+converter(m, 'унций')
+converter(n, 'грамм')
