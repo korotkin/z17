@@ -81,3 +81,17 @@ for i in range(n):
         c_list.append(elem)
     matrix_c.append(c_list)
 print(matrix_c)
+
+
+""" Task_06_13
+Создать матрицу равную разности matrix_a и matrix_b."""
+
+
+matrix_dif = []
+for i in range(n):
+    c_list = []
+    for j in range(m):
+        elem = matrix_a[i][j] - matrix_b[i][j]
+        c_list.append(elem)
+    matrix_dif.append(c_list)
+
