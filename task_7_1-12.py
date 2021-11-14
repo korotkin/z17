@@ -26,3 +26,18 @@ def converter(n, m):
         print("{} км = {} mile ".format(n, (round(n / mile, 2))))
 converter(n, 'км')
 converter(m, 'мили')
+
+
+#5:Фунты в килограммы и #6:Килограммы в фунты
+n = float(input("Введи массу в кг:"))
+m = float(input("Введи массу в фунтах:"))
+def converter(n, m):
+    funt = 2.20462
+    if m == 'кг':
+        print("{} фунтов = {}кг ".format(n, (n * funt)))
+    if m == 'фунтов':
+        print("{} кг = {} фунтов ".format(n, (round(n / funt, 2))))
+converter(n, 'кг')
+converter(m, 'фунтов')
+
+
