@@ -42,3 +42,30 @@ for row in arr:
     for elem in row:
         print(elem, end=" ")
     print()
+
+# Task_06_11
+#  Создать две новые матрицы matrix_a, matrix_b случайных чисел размерностью n*m.
+
+from random import randint
+
+n = 4
+m = 5
+matrix_a = []
+matrix_b = []
+
+for i in range(n):
+    arr1 = []
+    for j in range(m):
+        p = randint(1, 9)
+        arr1.append(p)
+    matrix_a.append(arr1)
+
+for i in range(n):
+    arr1 = []
+    for j in range(m):
+        p = randint(1, 9)
+        arr1.append(p)
+    matrix_b.append(arr1)
+
+print(matrix_a)
+print(matrix_b)
