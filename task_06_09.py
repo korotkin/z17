@@ -1,5 +1,5 @@
-#  Task_06_09
-#  Обнулить все элементы матрицы выше главной диагонали.
+"""Task_06_09
+Обнулить все элементы матрицы выше главной диагонали."""
 
 from random import randint
 
@@ -27,8 +27,8 @@ for row in arr:
         print(elem, end=" ")
     print()  # Печатаем для проверки
 
-#  Task_06_10
-#  Обнулить все элементы матрицы ниже главной диагонали.
+"""Task_06_10
+Обнулить все элементы матрицы ниже главной диагонали"""
 
 i = 1
 while i < n:
@@ -43,8 +43,8 @@ for row in arr:
         print(elem, end=" ")
     print()
 
-# Task_06_11
-#  Создать две новые матрицы matrix_a, matrix_b случайных чисел размерностью n*m.
+"""Task_06_11
+Создать две новые матрицы matrix_a, matrix_b случайных чисел размерностью n*m"""
 
 from random import randint
 
@@ -95,3 +95,12 @@ for i in range(n):
         c_list.append(elem)
     matrix_dif.append(c_list)
 
+
+""" Task_06_14
+Создать новую матрицу равную matrix_a умноженной на g. g вводится с клавиатуры"""
+
+
+g = float(input("Введите число: "))
+for i in range(n):
+    for j in range(m):
+        matrix_a[i][j] *= g
