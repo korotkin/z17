@@ -12,3 +12,17 @@ def converter(n, m):
         print("{} cm = {} inch ".format(n, (round(n / inch, 2))))
 converter(n, 'duim')
 converter(m, 'cm')
+
+
+#3:Мили в километры и #4:Километры в мили
+
+n = float(input("Введи расстояние в милях:"))
+m = float(input("Введи расстояние в км:"))
+def converter(n, m):
+    mile = 1.60934
+    if m == 'км':
+        print("{} mile = {}км ".format(n, (n * mile)))
+    if m == 'мили':
+        print("{} км = {} mile ".format(n, (round(n / mile, 2))))
+converter(n, 'км')
+converter(m, 'мили')
