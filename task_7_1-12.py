@@ -67,5 +67,16 @@ converter(m, 'галлонов')
 converter(n, 'литров')
 
 
+#11:Пинты в литры и #12:Литры в пинты
+n = float(input("Введи объем в пинтах:"))
+m = float(input("Введи массу в литрах:"))
+def converter(n, m):
+    pint = 0.56826127 #Британская пинта
+    if m == 'пинт':
+        print("{} пинт = {}литра ".format(n, (round(n * pint))))
+    if m == 'литра':
+        print("{} литров = {}пинт ".format(n, (round(n / pint, 2))))
+converter(m, 'пинта')
+converter(n, 'литра')
 
 
