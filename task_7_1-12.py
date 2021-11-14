@@ -52,3 +52,20 @@ def converter(n, m):
         print("{} грамм = {}унций ".format(n, (round(n / ounce, 2))))
 converter(m, 'унций')
 converter(n, 'грамм')
+
+
+#9:Галлон в литры и #10:Литры в галлоны
+n = float(input("Введи объем в галлонах:"))
+m = float(input("Введи массу в литрах:"))
+def converter(n, m):
+    gallon = 3.78541
+    if m == 'галлонов':
+        print("{} галлонов = {}литров ".format(n, (round(n * gallon))))
+    if m == 'литров':
+        print("{} литров = {}галлонов ".format(n, (round(n / gallon, 2))))
+converter(m, 'галлонов')
+converter(n, 'литров')
+
+
+
+
