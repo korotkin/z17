@@ -5,37 +5,26 @@
 Не учитывать числа кратные 5
 Циклами  for  while c  пред и пост условиями
 """
-from random import randint
 
-arr = []
-n = 10
-for i in range(n):
-    arr.append(randint())
-
-i = len(arr) - 1
-s = 0
-while i >= 0:
-    if arr[i] % 5 == 0:
-        s += arr[i]
-    i -= 1
-
-print(f"SUM={s}")
+def full_func(*args, **kwargs):
+    print(args)
 
 
-i = len(arr) - 1
-s = 0
-while True:
-    if arr[i] % 5 == 0:
-        s += arr[i]
-    i -= 1
-    if i < 0:
-        break
-print(f"SUM={s}")
+def full_func(*args, **kwargs):
+    print(args)
 
 
-s = 0
-for el in arr:
-    if el % 5 == 0:
-        s += el
+def full_func(*args, **kwargs):
+    print(args)
 
-s = sum([el for el in arr if el % 5 == 0])
+
+def full_func(*args, **kwargs):
+    print(args)
+
+
+full_func(1,2,3,a=4,b=5,c=6)
+full_func(1,2,3,a=4,b=5,c=6)
+full_func(1,2,3,a=4,b=5,c=6)
+full_func(1,2,3,a=4,b=5,c=6)
+
+
