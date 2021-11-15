@@ -73,3 +73,28 @@ def pints_to_liters(number):
 def liters_to_pints(number):
     result = number * 1.76
     return result
+
+
+my_dict_variant = {
+    1: [inch_to_centimeter],
+    2: [centimeter_to_inch],
+    3: [mile_to_km],
+    4: [km_to_mile],
+    5: [pounds_to_kg],
+    6: [kg_to_pounds],
+    7: [ounce_to_gramm],
+    8: [gramm_to_ounce],
+    9: [gallon_to_liter],
+    10: [liter_to_gallon],
+    11: [pints_to_liters],
+    12: [liters_to_pints]
+}
+
+variant_of_translation = int(input("Выбирети вариант перевода (от 1 до 12): "))
+
+while variant_of_translation != 0:
+    number = int(input("Введите число для перевода: "))
+
+    result = my_dict_variant[variant_of_translation][0](number)
+    print(f"Ответ: {result}")
+    variant_of_translation = int(input("Выбирети вариант перевода (от 1 до 12): "))
